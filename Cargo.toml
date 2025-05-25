@@ -3,6 +3,10 @@ name = "roguelike-game-by-rust"
 version = "0.1.0"
 edition = "2024"
 
-[dependencies]
+[workpace]
+resolver = "2"
+members = ["roguelike/*"]
+
+[workspace.dependencies]
 bracket-lib = {git = "https://github.com/amethyst/bracket-lib"}
 specs = {version = "0.20.0", freatures = ["specs-derive"]}
